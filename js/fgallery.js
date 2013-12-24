@@ -271,13 +271,13 @@ function onMainReady()
   if(imgs.data[eidx].file)
   {
     var img = imgs.data[eidx].file[0];
-    dsc.push("<a title=\"Download image\" href=\"" + encodeURI(img) + "\"><img src=\"eye.png\"/></a>");
+    dsc.push("<a title=\"Download image\" href=\"" + encodeURI(img) + "\"><img src=\"/images/eye.png\"/></a>");
     eimg.addEvent('click', function() { window.location = img; });
     eimg.setStyle('cursor', 'pointer'); // fallback
     eimg.setStyle('cursor', 'zoom-in');
   }
   if(imgs.download)
-    dsc.push("<a title=\"Download album\" href=\"" + encodeURI(imgs.download) + "\"><img src=\"download.png\"/></a>");
+    dsc.push("<a title=\"Download album\" href=\"" + encodeURI(imgs.download) + "\"><img src=\"/images/download.png\"/></a>");
   if(imgs.data[eidx].date)
     dsc.push("<b>Date</b>: " + imgs.data[eidx].date);
   ehdr.set('html', dsc.join(' '));
@@ -318,7 +318,7 @@ function onMainReady()
   fx.start('opacity', 1);
 
   var rp = Math.floor(Math.random() * 100);
-  emain.setStyle('background-image', 'url(noise.png), url(' + encodeURI(imgs.data[eidx].blur) + ')');
+  emain.setStyle('background-image', 'url(/images/noise.png), url(' + encodeURI(imgs.data[eidx].blur) + ')');
   emain.setStyle('background-position', rp + 'px ' + rp + 'px, 0 0');
 
   clearTimeout(tthr);
@@ -337,7 +337,7 @@ function onMainReady()
 function showThrobber()
 {
   var img = new Element('img', { id: 'throbber' });
-  img.src = "throbber.gif";
+  img.src = "/images/throbber.gif";
   ehdr.empty();
   img.inject(ehdr);
   ehdr.setStyle('display', 'block');
@@ -495,11 +495,11 @@ function initGallery(data)
   eflash.inject(tmp);
 
   eleft = new Element('a', { id: 'left' });
-  eleft.adopt((new Element('div')).adopt(new Element('img', { 'src': 'left.png' })));
+  eleft.adopt((new Element('div')).adopt(new Element('img', { 'src': '/images/left.png' })));
   eleft.inject(tmp);
 
   eright = new Element('a', { id: 'right' });
-  eright.adopt((new Element('div')).adopt(new Element('img', { 'src': 'right.png' })));
+  eright.adopt((new Element('div')).adopt(new Element('img', { 'src': '/images/right.png' })));
   eright.inject(tmp);
   tmp.inject(econt);
 
@@ -631,11 +631,9 @@ function init()
   new Request.JSON({ url: datafile, onSuccess: initGallery }).get();
 
   // preload some resources
-  Asset.images(['throbber.gif', 'noise.png',
-		'left.png', 'right.png',
-		'eye.png', 'download.png',
-		'cut-left.png', 'cut-right.png',
-		'cut-top.png', 'cut-mov.png']);
+  Asset.images(['/images/throbber.gif', '/images/noise.png',
+		'/images/left.png', '/images/right.png',
+		'/images/eye.png', '/images/download.png',
+		'/images/cut-left.png', '/images/cut-right.png',
+		'/images/cut-top.png', '/images/cut-mov.png']);
 }
-
-window.addEvent('domready', init);

@@ -238,35 +238,35 @@ img
 
 #gallery #list .thumb.cut-left .ovr
 {
-  background: url(cut-left.png) top left repeat-y;
+  background: url(/css/cut-left.png) top left repeat-y;
 }
 
 #gallery #list .thumb.cut-right .ovr
 {
-  background: url(cut-right.png) repeat-y top right;
+  background: url(/css/cut-right.png) repeat-y top right;
 }
 
 #gallery #list .thumb.cut-left.cut-right .ovr
 {
-  background: url(cut-left.png) top left repeat-y, url(cut-right.png) repeat-y top right;
+  background: url(/css/cut-left.png) top left repeat-y, url(/css/cut-right.png) repeat-y top right;
 }
 
 #gallery #list .thumb.cut-top .ovr
 {
-  background: url(cut-top.png) top left repeat-x;
+  background: url(/css/cut-top.png) top left repeat-x;
 }
 
 #gallery #list .thumb.cut-bottom .ovr
 {
-  background: url(cut-right.png) repeat-x bottom left;
+  background: url(/css/cut-right.png) repeat-x bottom left;
 }
 
 #gallery #list .thumb.cut-top.cut-bottom .ovr
 {
-  background: url(cut-left.png) top left repeat-x, url(cut-right.png) repeat-x bottom left;
+  background: url(/css/cut-left.png) top left repeat-x, url(/css/cut-right.png) repeat-x bottom left;
 }
 
 #gallery #list .thumb.movie .ovr
 {
-  background: url(cut-mov.png) top left repeat-y, url(cut-mov.png) top right repeat-y;
+  background: url(/css/cut-mov.png) top left repeat-y, url(/css/cut-mov.png) top right repeat-y;
 }
