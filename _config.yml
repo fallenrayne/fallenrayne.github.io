@@ -2,3 +2,4 @@ name: brandon.skeen
 markdown: redcarpet
 pygments: true
 baseurl: /
+include: ['.thumbs']
