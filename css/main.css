@@ -9,21 +9,6 @@ body {
     font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.background {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background: url("/images/CIMG0746-2.jpg") repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-    -webkit-filter: blur(5px) brightness(40%);
-    z-index: -1;
-}
-
 h1 {
     font-size: 2.5em;
     text-transform: lowercase;
@@ -31,13 +16,38 @@ h1 {
     text-align: right;
 }
 
-#gallery {
+.container {
+    position: absolute;
     top: 57px;
-    bottom: 0;
     left: 0;
     right: 0;
-    width: auto;
-    height: auto;
+    bottom: 0;
+}
+
+.navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(46, 46, 46);
+}
+
+.navbar .nav {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar .navitems {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.navbar .navitems a, .navbar .navitems a:active, .navbar .navitems a:visited {
+    color: #fff;
+    text-decoration: none;
 }
 
 /*****************************************************************************/
