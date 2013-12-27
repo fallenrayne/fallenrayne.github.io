@@ -5,8 +5,15 @@
 /*****************************************************************************/
 body {
     color: #fff;
-    background: #000;
+    background: rgb(64, 64, 64);
     font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke: 0.35px
+    line-height: 1;
+}
+
+a, a:hover, a:visited, a:active {
+    color: white;
 }
 
 h1 {
@@ -14,6 +21,9 @@ h1 {
     text-transform: lowercase;
     opacity: .5;
     text-align: right;
+    padding-right: 50px;
+    text-shadow: 1px 1px 10px #000;
+    font-weight: normal;
 }
 
 .container {
@@ -32,6 +42,8 @@ h1 {
     height: 50px;
     line-height: 50px;
     background-color: rgb(46, 46, 46);
+    border-bottom: 1px solid #000;
+    box-shadow: 0 0 4px #111;
 }
 
 .navbar .nav {
@@ -48,6 +60,83 @@ h1 {
 .navbar .navitems a, .navbar .navitems a:active, .navbar .navitems a:visited {
     color: #fff;
     text-decoration: none;
+}
+
+.galleryList {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery {
+    position: relative;
+    width: 200px;
+    height: 160px;
+    border: 2px solid #000;
+    display: inline-block;
+    margin: 15px;
+    box-shadow: 0 0 10px #000;
+}
+
+.gallery.caveTrip a {
+    background-image: url('/gallery/cavetrip_thumb.jpg');
+}
+
+.gallery.sfbay a {
+    background-image: url('/gallery/sfbay_thumb.jpg');
+}
+
+.gallery.utah a {
+    background-image: url('/gallery/P1070135.jpg');
+}
+
+.gallery.bosnia a {
+    background-image: url('/gallery/P4280130.jpg');
+}
+
+.gallery.belgium a {
+    background-image: url('/gallery/P5220001-1.jpg');
+}
+
+.gallery.dc2005 a {
+    background-image: url('/gallery/CIMG0089.jpg');
+}
+
+.gallery.colorado a {
+    background-image: url('/gallery/CIMG1258.jpg');
+}
+
+.gallery.newmexico a {
+    background-image: url('/gallery/CIMG0777.jpg');
+}
+
+.gallery.random a {
+    background-image: url('/gallery/CIMG0306.jpg');
+}
+
+.gallery a {
+    display: inline-block;
+    width: 100%;
+    height: 130px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.gallery a:hover {
+    opacity: .50;
+}
+
+.gallery a div {
+    background: rgb(46, 46, 46);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    line-height: 30px;
+    border-top: 2px solid #000;
+    text-align: center;
 }
 
 /*****************************************************************************/

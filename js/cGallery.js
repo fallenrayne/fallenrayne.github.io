@@ -192,7 +192,7 @@
       if (sb !== hasScrollbar) {
         var height = BASE_STRIP_HEIGHT + (sb ? scrollbarSize : 0);
         $footer.css("height", height);
-        $middle.css("bottom", height);
+        $middle.css("bottom", height + 20);
         hasScrollbar = sb;
       }
     }
