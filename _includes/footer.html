@@ -21,7 +21,7 @@
         	}
 
         	if (middle) {
-        		Hammer(middle).on('swipe', function (e) {
+        		Hammer(body).on('swipe', function (e) {
         			if (e.gesture.direction === Hammer.DIRECTION_LEFT) {
         				window.cGallery.next();
         			} else if (e.gesture.direction === Hammer.DIRECTION_RIGHT) {

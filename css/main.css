@@ -225,16 +225,7 @@ h1 {
 /*****************************************************************************/
 @media screen and (max-width: 700px) {
     .pseudo-button {
-        opacity: 0;
-        z-index: 1;
-        -moz-transition: opacity 1s;
-        -webkit-transition: opacity 1s;
-        -o-transition: opacity 1s;
-        transition: opacity 1s;
-    }
-
-    .pseudo-button:hover {
-        opacity: 1;
+        display: none;
     }
 
     .center {
