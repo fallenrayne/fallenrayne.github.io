@@ -33,10 +33,6 @@
     var disableHistory = /[&?](nohistory|n)=1/.test(window.location.search);
     var back;
 
-    if (!embedded) {
-      $body.addClass('project-link');
-    }
-
     if (embedded) {
       $(window).on('message', function(event) {
         event = event.originalEvent || event;
@@ -418,10 +414,17 @@
       $(".strip img").on("load", thumbnailLoaded);
       $('img').on('dragstart', function(event) { event.preventDefault(); });
 
+      if (!embedded) {
+        $body.addClass('project-link');
+      }
+
       render();
     }
 
-    window.cGallery = {};
-    window.cGallery.main = main;
+    window.cGallery = {
+      main: main,
+      previous: previous,
+      next: next
+    };
   });
 }());

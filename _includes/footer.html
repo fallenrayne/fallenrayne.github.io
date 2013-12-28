@@ -4,7 +4,65 @@
         <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/spin.js/1.2.7/spin.min.js"></script>
         <script type="text/javascript" src="/js/jquery.getscrollbarwidth.js"></script>
+        <script type="text/javascript" src="/js/hammer.min.js"></script>
         <script type="text/javascript" src="/js/cGallery.js"></script>
-        <script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
+
+        <script type="text/javascript">
+        	var hideFileStripEl = document.querySelector('.hideFilmStrip');
+        	var middle = document.querySelector('.middle');
+        	var body = document.body;
+
+        	if (localStorage) {
+        		window.initialHideStrip = localStorage.getItem('hideFilmStrip') === 'true';
+
+        		if (window.initialHideStrip) {
+        			toggleFilmStrip(window.initialHideStrip)
+        		}
+        	}
+
+        	if (middle) {
+        		Hammer(middle).on('swipe', function (e) {
+        			if (e.direction === Hammer.DIRECTION_LEFT) {
+        				window.cGallery.previous();
+        			} else if (e.direction === Hammer.DIRECTION_RIGHT) {
+        				window.cGallery.next();
+        			}
+        		});
+        	}
+
+        	function toggleFilmStrip (hide) {
+        		var closeStrip = hide = !body.classList.contains('hideStrip');
+
+        		if (closeStrip) {
+            		hideFileStripEl.innerText = "Show Film Strip"
+        		} else {
+            		hideFileStripEl.innerText = "Hide Film Strip"
+        		}
+
+        		if (localStorage) {
+            		localStorage.setItem('hideFilmStrip', closeStrip);
+            	}
+
+            	body.classList.toggle('hideStrip', closeStrip);
+        	}
+
+            document.querySelector('.collapsedMenuHandle').addEventListener('click', function () {
+            	body.classList.toggle('showMenu', !body.classList.contains('showMenu'));
+            });
+
+            hideFileStripEl.addEventListener('click', function () {
+            	toggleFilmStrip();
+            });
+
+            document.addEventListener('click', function (e) {
+            	if (e.target && e.target.classList.contains('collapsedMenuHandle')) {
+            		return true;
+            	}
+
+            	if (body.classList.contains('showMenu')) {
+            		body.classList.remove('showMenu');
+            	}
+            }, true);
+        </script>
     </body>
 </html>
