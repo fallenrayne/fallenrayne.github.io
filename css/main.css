@@ -76,7 +76,7 @@ h1 {
     vertical-align: middle;
 }
 
-.hideFilmStrip {
+.navbar .navitems.hideFilmStrip {
     display: none;
     cursor: pointer;
 }
@@ -286,7 +286,7 @@ h1 {
         left: 10px;
     }
 
-    body.project-link .hideFilmStrip {
+    body.project-link .navbar .navitems.hideFilmStrip {
         display: block;
     }
 
