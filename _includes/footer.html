@@ -22,10 +22,10 @@
 
         	if (middle) {
         		Hammer(middle).on('swipe', function (e) {
-        			if (e.direction === Hammer.DIRECTION_LEFT) {
-        				window.cGallery.previous();
-        			} else if (e.direction === Hammer.DIRECTION_RIGHT) {
+        			if (e.gesture.direction === Hammer.DIRECTION_LEFT) {
         				window.cGallery.next();
+        			} else if (e.gesture.direction === Hammer.DIRECTION_RIGHT) {
+        				window.cGallery.previous();
         			}
         		});
         	}
