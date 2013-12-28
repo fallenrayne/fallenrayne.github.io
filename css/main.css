@@ -210,13 +210,14 @@ h1 {
 
 .gallery a div {
     position: absolute;
-    bottom: 0;
+    opacity: .75;
+    top: 10px;
     left: 0;
     right: 0;
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background: rgb(46, 46, 46);
+    background: #000;
     display: block;
 }
 
