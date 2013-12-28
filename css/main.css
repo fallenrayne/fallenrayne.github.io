@@ -211,7 +211,7 @@ h1 {
 .gallery a div {
     position: absolute;
     opacity: .75;
-    top: 10px;
+    top: 0;
     left: 0;
     right: 0;
     height: 30px;
