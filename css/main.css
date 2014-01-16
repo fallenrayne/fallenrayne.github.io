@@ -153,6 +153,18 @@ h1 {
     padding: 0;
 }
 
+.gallery.yosemite1213 a {
+    background-image: url('/gallery/yosemitethumb.jpg');
+}
+
+.gallery.succulent a {
+    background-image: url('/gallery/succulentthumb.jpg');
+}
+
+.gallery.monterey a {
+    background-image: url('/gallery/montereythumb.jpg');
+}
+
 .gallery.caveTrip a {
     background-image: url('/gallery/SAM_8121.jpg');
 }

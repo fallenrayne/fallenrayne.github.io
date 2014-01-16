@@ -1,0 +1,46 @@
+---
+layout: default
+title: succulent macros
+---
+
+<script type="text/javascript">
+  window.addEventListener('load', function () {
+    $.getJSON('images.json').done(function (images, status, res) {
+      if (status === 'success' && images.length > 0) {
+        cGallery.main(images);
+      }
+    });
+  });
+</script>
+
+<div class="header">
+    <ul class="color-picker">
+        <li data-bg="#000000" class="color-button"></li>
+        <li data-bg="#181818" class="color-button"></li>
+        <li data-bg="#404040" class="color-button"></li>
+        <li data-bg="#808080" class="color-button"></li>
+        <li data-bg="#b0b0b0" class="color-button"></li>
+        <li data-bg="#ffffff" class="color-button"></li>
+    </ul>
+</div>
+<div class="middle">
+    <div class="pseudo-button prev">
+      <div class="button prev">&lt;</div>
+    </div>
+    <div class="pseudo-button next">
+      <div class="button next">&gt;</div>
+    </div>
+    <div class="center">
+        <div class="current-image-container">
+            <img class="current-image">
+            <div class="no-images-text">there are no images here.</div>
+            <div class="spinner-container"></div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="strip"></div>
+</div>
+<div class="bitbucket">
+    <a href="https://bitbucket.org/clangen/cgallery" target="_new">https://bitbucket.org/clangen/cgallery</a>
+</div>
