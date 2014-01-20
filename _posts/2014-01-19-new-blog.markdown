@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "new blog, lets see how this works"
+date:   2013-12-18 20:33:21
+categories: jekyll update
+---
+
+Moved to a new blogging platform called [jekyll]. Pretty slick little system as it generates static websites that can then be hosted pretty much anywhere. I am using [github pages] right now and it seems to be working pretty well.
+
+I might move over my posts from my other blog over eventually, but there really wasn't much there to begin with. I had my An Event Apart conference notes from almost 3 years ago and my CR-48 unboxing from the same time period. Basically I stopped writing there as soon as I got my job with Amazon.com.
+
+Up here I am going to basically write every once in while about programming, photography, or gaming just so that I can vent every once in while.
+
+[github pages]: http://pages.github.com/
+[jekyll]:    http://jekyllrb.com

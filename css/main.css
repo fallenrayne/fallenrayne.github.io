@@ -29,8 +29,8 @@ h1 {
 .container {
     position: absolute;
     top: 57px;
-    left: 0;
-    right: 0;
+    left: 40px;
+    right: 40px;
     bottom: 0;
 }
 
@@ -81,6 +81,14 @@ h1 {
     cursor: pointer;
 }
 
+dl {
+    margin-left: 20px;
+}
+
+dd {
+    padding: 2px 0;
+}
+
 /*****************************************************************************/
 /* Home
 /*****************************************************************************/
@@ -104,6 +112,10 @@ h1 {
 /*****************************************************************************/
 
 /* standard */
+.post {
+    max-width: 800px;
+}
+
 .post pre {
     border: 1px solid #ddd;
     background-color: #eef;
@@ -151,6 +163,10 @@ h1 {
     display: inline-block;
     margin: 0;
     padding: 0;
+}
+
+.gallery.landstuhl a {
+    background-image: url('/gallery/landstuhlthumb.jpg');
 }
 
 .gallery.yosemite1213 a {
