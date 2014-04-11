@@ -169,8 +169,16 @@ dd {
     background-image: url('/gallery/landstuhlthumb.jpg');
 }
 
+.gallery.goldengate1 a {
+    background-image: url('/gallery/goldengate1.jpg');
+}
+
 .gallery.yosemite1213 a {
     background-image: url('/gallery/yosemitethumb.jpg');
+}
+
+.gallery.pacifica a {
+    background-image: url('/gallery/pacifica.jpg');
 }
 
 .gallery.succulent a {

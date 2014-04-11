@@ -1,0 +1,4 @@
+README
+---
+Command to build a new gallery:
+php ~/Development/cgallery/cgallery/install.php -t album -s ~/Development/cgallery/cgallery/ -p utah
