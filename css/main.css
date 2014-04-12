@@ -173,6 +173,22 @@ dd {
     background-image: url('/gallery/goldengate1.jpg');
 }
 
+.gallery.pointreyes a {
+    background-image: url('/gallery/pointreyes.jpg');
+}
+
+.gallery.redwoods a {
+    background-image: url('/gallery/redwoods.jpg');
+}
+
+.gallery.battery a {
+    background-image: url('/gallery/battery-3.jpg');
+}
+
+.gallery.photowalk0724 a {
+    background-image: url('/gallery/photowalk0724.jpg');
+}
+
 .gallery.yosemite1213 a {
     background-image: url('/gallery/yosemitethumb.jpg');
 }
