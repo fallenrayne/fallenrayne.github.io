@@ -223,15 +223,7 @@
       }
     }
 
-    function centerImageVertically() {
-      var containerHeight = $imageContainer.height();
-      var imageHeight = $image.height();
-      var offset = ((containerHeight - imageHeight) / 2 ) - 4;
-      $image.css({"margin-top": offset, "visibility": "visible"});
-    }
-
     function dimensionsChanged() {
-      centerImageVertically();
       checkForScrollbar();
       updateScrollLeft({animate: false});
     }
